@@ -67,7 +67,7 @@ namespace ApiCatalogoJogos
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiCatalogoJogos v1"));
             }
 
-            app.UseMiddleware<ExceptionMiddleware>();
+            //app.UseMiddleware<ExceptionMiddleware>();
             app.UseHttpsRedirection();
 
             app.UseRouting();
